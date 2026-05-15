@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenTech Solutions | Products</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">GreenTech Solutions</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-header">
+      <h1>Products and Services</h1>
+      <p>Search GreenTech offerings below to find tools that fit your business needs.</p>
+    </section>
+
+    <section class="section">
+      <label for="productSearch" class="label">Search products</label>
+      <input type="search" id="productSearch" placeholder="Search by name or category...">
+
+      <div class="card-grid product-grid" id="productList">
+        <article class="card product-card" data-name="energy monitor office device">
+          <div class="image-placeholder" role="img" aria-label="Energy monitor device illustration">Energy Monitor</div>
+          <h2>EcoEnergy Monitor</h2>
+          <p>Tracks office power usage and gives simple suggestions for reducing wasted energy.</p>
+        </article>
+
+        <article class="card product-card" data-name="smart recycling waste system">
+          <div class="image-placeholder" role="img" aria-label="Smart recycling bin illustration">Recycling System</div>
+          <h2>SmartSort Recycling Bin</h2>
+          <p>Helps employees sort recyclables correctly and records recycling activity.</p>
+        </article>
+
+        <article class="card product-card" data-name="carbon tracker software dashboard">
+          <div class="image-placeholder" role="img" aria-label="Carbon tracking software dashboard illustration">Carbon Tracker</div>
+          <h2>CarbonTrack Dashboard</h2>
+          <p>Shows a business its estimated carbon output and progress toward sustainability goals.</p>
+        </article>
+
+        <article class="card product-card" data-name="consulting sustainability planning">
+          <div class="image-placeholder" role="img" aria-label="Sustainability planning illustration">Consulting</div>
+          <h2>Sustainability Starter Plan</h2>
+          <p>A guided service that helps small businesses create practical eco-friendly goals.</p>
+        </article>
+      </div>
+
+      <p id="noResults" class="hidden">No products found. Try a different search term.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 GreenTech Solutions. Built for a student final project.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

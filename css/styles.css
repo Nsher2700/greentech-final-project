@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-green: #153f2f;
+  --green: #2f7d4f;
+  --light-green: #dff2e6;
+  --cream: #f7f4e8;
+  --earth: #7a5c3a;
+  --white: #ffffff;
+  --text: #17251f;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: var(--dark-green);
+  color: var(--white);
+  padding: 0.75rem;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 10px;
+}
+
+header {
+  background: var(--dark-green);
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+}
+
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links .active {
+  background: var(--green);
+  outline: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: var(--green);
+  color: var(--white);
+  border: 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero {
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero h1,
+.page-header h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+  color: var(--dark-green);
+}
+
+.eyebrow {
+  color: var(--earth);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-card,
+.info-box,
+.card,
+.highlight {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.hero-card {
+  border-left: 8px solid var(--green);
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  border: none;
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--green);
+  color: var(--white);
+}
+
+.secondary {
+  background: var(--light-green);
+  color: var(--dark-green);
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.9;
+  outline: 3px solid var(--earth);
+}
+
+.section,
+.page-header {
+  padding: 2rem 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 1.5rem;
+}
+
+.highlight {
+  background: var(--light-green);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+th,
+td {
+  border: 1px solid #b7c7ba;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: var(--dark-green);
+  color: var(--white);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #8aa894;
+  border-radius: 10px;
+  margin-top: 0.25rem;
+  font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--green);
+}
+
+.label,
+label {
+  font-weight: bold;
+}
+
+.contact-form,
+.compact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.product-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-placeholder {
+  min-height: 130px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--light-green), #f0e2c0);
+  display: grid;
+  place-items: center;
+  color: var(--dark-green);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.form-message {
+  font-weight: bold;
+  color: var(--dark-green);
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--dark-green);
+  color: var(--white);
+  margin-top: 2rem;
+}
+
+@media (max-width: 760px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 70px;
+    background: var(--dark-green);
+    flex-direction: column;
+    width: 220px;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hero,
+  .two-column,
+  .card-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+}

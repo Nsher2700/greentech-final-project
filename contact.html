@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenTech Solutions | Contact</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">GreenTech Solutions</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-header">
+      <h1>Contact GreenTech</h1>
+      <p>Have questions about our products or services? Send us a message.</p>
+    </section>
+
+    <section class="section two-column">
+      <form id="contactForm" class="contact-form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" required placeholder="Your name">
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="you@example.com">
+        </div>
+
+        <div>
+          <label for="topic">Topic</label>
+          <select id="topic" required>
+            <option value="">Choose a topic</option>
+            <option>Products</option>
+            <option>Consulting</option>
+            <option>Newsletter</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required placeholder="Type your message here"></textarea>
+        </div>
+
+        <button type="submit" class="button primary">Submit Message</button>
+        <p id="contactMessage" class="form-message" aria-live="polite"></p>
+      </form>
+
+      <aside class="info-box">
+        <h2>Business Information</h2>
+        <p><strong>Email:</strong> info@greentechsolutions.com</p>
+        <p><strong>Phone:</strong> (555) 319-2026</p>
+        <p><strong>Address:</strong> 1200 Eco Park Drive, Las Cruces, NM 88001</p>
+        <p><strong>Hours:</strong> Monday-Friday, 8:00 AM-5:00 PM</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 GreenTech Solutions. Built for a student final project.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
